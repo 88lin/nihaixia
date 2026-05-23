@@ -9,6 +9,7 @@ distill_cases_v2.py
 distillation_analysis.txt
 long_lines_analysis.txt
 undistilled_lines.txt
+split_skill.py
 scripts/
 cases/
 
