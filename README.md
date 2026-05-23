@@ -5,6 +5,18 @@
 ## 项目声明
 本项目基于开源项目二次开发，遵循开源规范注明所有来源。
 
+## 🎬 效果演示
+以下是AI以倪海厦视角回答的真实对话截图，完整还原经方思维与临床心法：
+### 1. 六经辨证基础应用（感冒辨证）
+<img width="729" height="510" alt="360截图20260514012304" src="https://github.com/user-attachments/assets/98af88a7-fbaa-4a50-ac63-7f10e8c61dbe" />
+
+### 2. 六经传变规律	
+<img width="726" height="509" alt="360截图20260514012344" src="https://github.com/user-attachments/assets/af0fb0c1-944b-4846-8dc2-4aaa2bc5b531" />
+
+### 3. 日常养生与饮食禁忌（五味观）
+<img width="731" height="509" alt="360截图20260514012846" src="https://github.com/user-attachments/assets/7c252c14-9497-4a94-be31-4a9670df3afb" />
+
+
 ## 来源说明
 - 基础框架：https://github.com/huoyalong/nihaisha-skill
 - 医案数据：https://github.com/9527qingfeng/hantang-nihaixia-follower
