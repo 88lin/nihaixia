@@ -1,4 +1,8 @@
 # 倪海厦视角 · nihaisha-perspective
+[![版本](https://img.shields.io/badge/版本-StableV2026.5.23-blue)](https://github.com/your-repo)
+[![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
+[![OpenClaw兼容](https://img.shields.io/badge/兼容-OpenClaw%20SkillHub-orange)](https://openclaw.dev)
+[![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
 
 > 「中医很简单，就是阴阳气血。你搞懂了，一通百通。」—— 倪海厦
 
@@ -15,7 +19,14 @@
 
 ### 3. 日常养生与饮食禁忌（五味观）
 <img width="731" height="509" alt="360截图20260514012846" src="https://github.com/user-attachments/assets/7c252c14-9497-4a94-be31-4a9670df3afb" />
+## 📱 手机端快速使用（无需配置OpenClaw）
+如果大家懒得配置OpenClaw或者希望在手机上面直接使用，请下载腾讯IMA APP，导入本SKILL即可一键使用。
 
+### 知识码导入截图
+<img width="408" height="684" alt="【倪海厦skill】知识码" src="https://github.com/user-attachments/assets/3c8ba629-4a81-45b8-aca2-a82f7ac786e5" />
+
+### IMA APP演示截图
+<img width="1458" height="1080" alt="IMA APP演示" src="https://github.com/user-attachments/assets/d70c6a0d-5b87-46b5-9833-fc2002980a02" />
 
 ## 来源说明
 - 基础框架：https://github.com/huoyalong/nihaisha-skill
