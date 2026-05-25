@@ -1,5 +1,5 @@
 # 倪海厦skill · nihaixia
-[![版本](https://img.shields.io/badge/版本-v2.0.0-blue)](https://github.com/jangviktor-web/nihaixia/releases)
+[![版本](https://img.shields.io/badge/版本-v2.0.1-blue)](https://github.com/jangviktor-web/nihaixia/releases)
 [![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
 [![ClawHub](https://img.shields.io/badge/ClawHub-nihaixia-orange)](https://clawhub.ai/skills/nihaixia)
 [![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
@@ -139,6 +139,7 @@ cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 | **人纪·针灸教程** | 216 页讲义蒸馏，含十二经络/井荣俞经合/任督要穴 | 完整 |
 | **人纪·神农本草经** | 339 页视频同步文稿蒸馏，含三品分类/药性体系 | 完整 |
 | **人纪·医案集** | 849 个医案结构化，243 个超长医案已标记 | 849 例 |
+| **分类医案库** | 按疾病类型分类：癌症 147/心血管 22/代谢 12/自免 2/神经 3/其他 59 | 245 例 |
 | **口述表达DNA** | 倪海厦口语表达风格模块 | 完整 |
 | **天纪体系** | 天机道（紫微斗数）/人间道（易经）/地脉道（风水） | 完整 |
 | **人纪班闭门课** | 7 大重病专题 + 7 堂弟子课 | 完整 |
@@ -211,19 +212,31 @@ cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 
 ```
 nihaixia/
-├── SKILL.md                    # 主技能文件（836K，Claude 直接读取）
+├── SKILL.md                    # 主技能文件（840K，Claude 直接读取）
 ├── distilled_cases.md          # 849 医案结构化索引
 ├── expression_style.md         # 倪海厦口语表达风格模块
 ├── modules/                    # 9 个知识模块（详细内容）
 │   ├── 01_shanghan_sun.md      # 伤寒论太阳篇
 │   ├── 02_shanghan_other.md    # 伤寒论其他五经
-│   ├── 03_yian.md              # 医案集
+│   ├── 03_yian.md              # 医案集（849 例完整版）
 │   ├── 04_jingui.md            # 金匮要略
 │   ├── 05_huangdi_neijing.md   # 黄帝内经
 │   ├── 06_liangdong.md         # 梁冬对话
 │   ├── 07_bimen_hantang.md     # 闭门课+汉唐
 │   ├── 08_huangdi_detail.md    # 黄帝内经详注
 │   └── 09_zhenjiu_bencao.md    # 针灸+神农本草经
+├── cases/                      # 分类医案（按疾病类型）
+│   ├── 01_cancer.md            # 147 个癌症医案
+│   ├── 02_cardiovascular.md    # 22 个心血管医案
+│   ├── 03_metabolic.md         # 12 个代谢病医案
+│   ├── 04_autoimmune.md        # 2 个自身免疫医案
+│   ├── 05_neurological.md      # 3 个神经精神医案
+│   └── 06_other.md             # 59 个其他医案
+├── references/research/        # 研究资料
+│   ├── combined_reference.md   # 合并参考（生平/表达/教学/临床）
+│   ├── 01-writings.md          # 著作总览
+│   ├── 02-conversations.md     # 对话风格
+│   └── ...                     # 其他研究文件
 └── README.md
 ```
 
@@ -249,6 +262,7 @@ nihaixia/
 
 ## 更新日志
 
+- **v2.0.1** (2026-05-26)：新增分类医案库 cases/（245 例，按疾病类型分类）+ 研究资料 references/；修复 .gitignore 忽略 cases/ 的问题
 - **v2.0.0** (2026-05-25)：仓库精简——移除原始参考资料(110MB)、完整版SKILL.full.md、测试报告等非核心文件，仅保留运行必需文件(4MB)；新增仓库结构说明
 - **v1.1.2** (2026-05-24)：详情页重写——新增安装教程（ClawHub/OpenClaw/腾讯IMA/手动四种方式）、使用示例
 - **v1.1.1** (2026-05-24)：更名为「倪海厦skill」，slug 改为 `nihaixia`；发布至 ClawHub

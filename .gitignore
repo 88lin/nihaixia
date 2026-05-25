@@ -11,7 +11,6 @@ long_lines_analysis.txt
 undistilled_lines.txt
 split_skill.py
 scripts/
-cases/
 
 # Python
 __pycache__/
