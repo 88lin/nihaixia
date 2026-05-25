@@ -39,7 +39,20 @@ npm install -g openclaw
 openclaw skills install nihaixia
 ```
 
-### 方式三：手机端快速使用（无需配置 OpenClaw）
+### 方式三：OpenClawMP 安装
+
+```bash
+# 安装 OpenClawMP CLI
+npm install -g openclawmp
+
+# 搜索倪海厦skill
+openclawmp search 倪海厦
+
+# 安装（使用资产ID）
+openclawmp install skill/c03b361cb99d4b4ebc6cd17f361741ba
+```
+
+### 方式四：手机端快速使用（无需配置 OpenClaw）
 
 如果大家懒得配置 OpenClaw 或者希望在手机上面直接使用，请下载**腾讯 IMA APP**，导入本 SKILL 即可一键使用。
 
@@ -51,7 +64,7 @@ openclaw skills install nihaixia
 ### IMA APP 演示截图
 <img width="1458" height="1080" alt="IMA APP演示" src="https://github.com/user-attachments/assets/d70c6a0d-5b87-46b5-9833-fc2002980a02" />
 
-### 方式四：手动安装
+### 方式五：手动安装
 
 1. 克隆仓库：
 ```bash
