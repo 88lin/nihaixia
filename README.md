@@ -3,7 +3,7 @@
 [![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
 [![ClawHub](https://img.shields.io/badge/ClawHub-nihaixia-orange)](https://clawhub.ai/skills/nihaixia)
 [![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
-[![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.club)
+[![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.cloud.tencent.com/skills/nihaixia-pro)
 [![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
 
 > 「中医很简单，就是阴阳气血。你搞懂了，一通百通。」—— 倪海厦
@@ -31,7 +31,23 @@ clawhub install nihaixia
 
 安装完成后，在 Claude Code 对话中直接说「倪海厦」即可激活。
 
-### 方式二：OpenClaw 安装
+### 方式二：SkillHub 安装（腾讯云）
+
+```bash
+# 访问 SkillHub 网站
+# https://skillhub.cloud.tencent.com/skills/nihaixia-pro
+
+# 或使用 CLI 安装
+npm install -g skillhub
+
+# 登录
+skillhub login
+
+# 安装倪海厦skill
+skillhub install nihaixia-pro
+```
+
+### 方式三：OpenClaw 安装
 
 ```bash
 # 安装 OpenClaw CLI
@@ -41,7 +57,7 @@ npm install -g openclaw
 openclaw skills install nihaixia
 ```
 
-### 方式三：OpenClawMP 安装
+### 方式四：OpenClawMP 安装
 
 ```bash
 # 安装 OpenClawMP CLI
@@ -54,7 +70,7 @@ openclawmp search 倪海厦
 openclawmp install skill/c03b361cb99d4b4ebc6cd17f361741ba
 ```
 
-### 方式四：手机端快速使用（无需配置 OpenClaw）
+### 方式五：手机端快速使用（无需配置 OpenClaw）
 
 如果大家懒得配置 OpenClaw 或者希望在手机上面直接使用，请下载**腾讯 IMA APP**，导入本 SKILL 即可一键使用。
 
@@ -66,7 +82,7 @@ openclawmp install skill/c03b361cb99d4b4ebc6cd17f361741ba
 ### IMA APP 演示截图
 <img width="1458" height="1080" alt="IMA APP演示" src="https://github.com/user-attachments/assets/d70c6a0d-5b87-46b5-9833-fc2002980a02" />
 
-### 方式五：手动安装
+### 方式六：手动安装
 
 1. 克隆仓库：
 ```bash
