@@ -2,6 +2,8 @@
 [![版本](https://img.shields.io/badge/版本-v2.0.1-blue)](https://github.com/jangviktor-web/nihaixia/releases)
 [![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
 [![ClawHub](https://img.shields.io/badge/ClawHub-nihaixia-orange)](https://clawhub.ai/skills/nihaixia)
+[![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
+[![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.club)
 [![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
 
 > 「中医很简单，就是阴阳气血。你搞懂了，一通百通。」—— 倪海厦
