@@ -1,5 +1,5 @@
 # 倪海厦skill · nihaixia
-[![版本](https://img.shields.io/badge/版本-v1.1.2-blue)](https://github.com/jangviktor-web/nihaixia/releases)
+[![版本](https://img.shields.io/badge/版本-v2.0.0-blue)](https://github.com/jangviktor-web/nihaixia/releases)
 [![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
 [![ClawHub](https://img.shields.io/badge/ClawHub-nihaixia-orange)](https://clawhub.ai/skills/nihaixia)
 [![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
@@ -7,6 +7,8 @@
 > 「中医很简单，就是阴阳气血。你搞懂了，一通百通。」—— 倪海厦
 
 **将经方大师倪海厦的完整中医思维体系注入 AI Agent，覆盖伤寒论 129 条、金匮 23 篇、黄帝内经 71 篇、针灸教程、神农本草经 345 种、849 个医案、天纪命理体系、梁冬对话，合计 2,452 页原始讲义、3.5M 字精萃内容。**
+
+**仓库精简版**：仅保留运行核心文件（4MB），原始参考资料（110MB）已移除。
 
 ---
 
@@ -56,7 +58,7 @@ openclaw skills install nihaixia
 git clone https://github.com/jangviktor-web/nihaixia.git
 ```
 
-2. 将 `SKILL.md` 和 `modules/`、`cases/` 目录复制到你的 Agent 技能目录：
+2. 将 `SKILL.md` 和 `modules/` 目录复制到你的 Agent 技能目录：
 ```bash
 # Claude Code 用户
 cp -r nihaixia/ ~/.claude/skills/nihaixia/
@@ -143,7 +145,6 @@ cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 | **梁冬对话精华** | 2009 年 12 月 7 期对话录音完整蒸馏 | 完整 |
 | **汉唐文章精华** | 10 篇专题文章（乳癌/便秘/心脏病/保养/药害等） | 完整 |
 | **汉唐诊疗日志** | 8 则精选医案 + 4 则经典案例 | 完整 |
-| **研究资料整合** | 8 个原始研究文件 + 合并精简版 | 完整 |
 
 ### 数据来源清单
 
@@ -206,51 +207,49 @@ cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 
 ---
 
-## SKILL.md 目录结构
+## 仓库结构
 
 ```
-一、角色设定
-  ├── 身份卡
-  ├── 角色扮演规则（激活条件/路由规则/频率约束）
-  └── 回答工作流（问题分类/研究方法/回答格式）
+nihaixia/
+├── SKILL.md                    # 主技能文件（836K，Claude 直接读取）
+├── distilled_cases.md          # 849 医案结构化索引
+├── expression_style.md         # 倪海厦口语表达风格模块
+├── modules/                    # 9 个知识模块（详细内容）
+│   ├── 01_shanghan_sun.md      # 伤寒论太阳篇
+│   ├── 02_shanghan_other.md    # 伤寒论其他五经
+│   ├── 03_yian.md              # 医案集
+│   ├── 04_jingui.md            # 金匮要略
+│   ├── 05_huangdi_neijing.md   # 黄帝内经
+│   ├── 06_liangdong.md         # 梁冬对话
+│   ├── 07_bimen_hantang.md     # 闭门课+汉唐
+│   ├── 08_huangdi_detail.md    # 黄帝内经详注
+│   └── 09_zhenjiu_bencao.md    # 针灸+神农本草经
+└── README.md
+```
 
-二、心智模型
-  ├── 六经辨证
-  ├── 太阳病篇·条文1-129（完整）
-  └── 阳明/少阳/太阴/少阴/厥阴病篇
-
+**SKILL.md 目录结构**：
+```
+一、角色设定 → 身份卡 / 角色扮演规则 / 回答工作流
+二、心智模型 → 六经辨证 / 太阳病篇条文1-129 / 其他五经
 三、决策启发式 / 表达DNA / 价值观 / 智识谱系
-
 四、伤寒论六经完整解读（条文1-129）
-
 五、金匮要略23篇完整解读
-
-六、人纪·医案集（849 例）
-  └── 汉唐诊疗日志精选（8 则）
-
+六、人纪·医案集（849 例）+ 汉唐诊疗日志精选
 七、人纪班闭门课（7 大重病 + 7 堂弟子课）
-
 八、梁冬对话精华（2009年12月7期）
-
 九、人纪·黄帝内经（71篇完整）
-
 十、人纪·针灸教程 / 神农本草经
-
 十一、天纪体系（天机道/人间道/地脉道）
-
 十二、汉唐文章精华（10篇）
-
-十三、倪海厦推荐书目（古典七大+近代六本+英文三本）
-
-十四、口述表达DNA（表达风格模块）
-
-十五、研究资料整合（8个原始研究文件）
+十三、倪海厦推荐书目
+十四、口述表达DNA
 ```
 
 ---
 
 ## 更新日志
 
+- **v2.0.0** (2026-05-25)：仓库精简——移除原始参考资料(110MB)、完整版SKILL.full.md、测试报告等非核心文件，仅保留运行必需文件(4MB)；新增仓库结构说明
 - **v1.1.2** (2026-05-24)：详情页重写——新增安装教程（ClawHub/OpenClaw/腾讯IMA/手动四种方式）、使用示例
 - **v1.1.1** (2026-05-24)：更名为「倪海厦skill」，slug 改为 `nihaixia`；发布至 ClawHub
 - **v1.1.0** (2026-05-23 StableV2026.5.23+Bencao)：神农本草经药性体系深度蒸馏；关键词索引全面优化；9 个知识模块检索路径全部校验
