@@ -34,16 +34,10 @@ clawhub install nihaixia
 ### 方式二：SkillHub 安装（腾讯云）
 
 ```bash
-# 访问 SkillHub 网站
-# https://skillhub.cloud.tencent.com/skills/nihaixia-pro
+# 1. 安装 SkillHub CLI
+curl -fsSL https://skillhub.cn/install/install.sh | bash -s -- --no-skills
 
-# 或使用 CLI 安装
-npm install -g skillhub
-
-# 登录
-skillhub login
-
-# 安装倪海厦skill
+# 2. 安装倪海厦skill
 skillhub install nihaixia-pro
 ```
 
