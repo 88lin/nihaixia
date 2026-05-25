@@ -1,7 +1,7 @@
 # 倪海厦skill · nihaixia
 [![版本](https://img.shields.io/badge/版本-v2.0.1-blue)](https://github.com/jangviktor-web/nihaixia/releases)
 [![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
-[![ClawHub](https://img.shields.io/badge/ClawHub-nihaixia-orange)](https://clawhub.ai/skills/nihaixia)
+[![ClawHub](https://img.shields.io/badge/ClawHub-v2.0.4-orange)](https://clawhub.ai/skills/nihaixia)
 [![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
 [![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.cloud.tencent.com/skills/nihaixia-pro)
 [![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
