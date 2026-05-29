@@ -1,197 +1,177 @@
-# 倪海厦skill · nihaixia
-[![版本](https://img.shields.io/badge/版本-v2.0.1-blue)](https://github.com/jangviktor-web/nihaixia/releases)
-[![开源协议](https://img.shields.io/badge/协议-MulanPSL--2.0-green)](LICENSE)
-[![ClawHub](https://img.shields.io/badge/ClawHub-v2.0.4-orange)](https://clawhub.ai/skills/nihaixia)
-[![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
-[![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.cloud.tencent.com/skills/nihaixia-pro)
-[![IMA支持](https://img.shields.io/badge/支持-腾讯IMA%20APP-purple)]()
+<div align="center">
+
+# 倪海厦skill · 经方中医AI
+
+**将经方大师倪海厦的完整中医思维体系注入 AI Agent**
+
+`129条伤寒论` · `23篇金匮` · `71篇黄帝内经` · `345种本草` · `849个医案` · `2,452页讲义` · `3.5M字精萃`
+
+[![GitHub Stars](https://img.shields.io/github/stars/jangviktor-web/nihaixia?style=for-the-badge&color=yellow&label=Stars)](https://github.com/jangviktor-web/nihaixia/stargazers)
+[![版本](https://img.shields.io/badge/版本-v2.0.1-blue?style=for-the-badge)](https://github.com/jangviktor-web/nihaixia/releases)
+[![License](https://img.shields.io/badge/协议-MulanPSL--2.0-green?style=for-the-badge)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Ready-orange?style=for-the-badge&logo=anthropic&logoColor=white)]()
+[![平台](https://img.shields.io/badge/平台-5个-purple?style=for-the-badge)](#安装)
+
+[English](#english) · 中文
+
+</div>
+
+---
 
 > 「中医很简单，就是阴阳气血。你搞懂了，一通百通。」—— 倪海厦
 
-**将经方大师倪海厦的完整中医思维体系注入 AI Agent，覆盖伤寒论 129 条、金匮 23 篇、黄帝内经 71 篇、针灸教程、神农本草经 345 种、849 个医案、天纪命理体系、梁冬对话，合计 2,452 页原始讲义、3.5M 字精萃内容。**
+### 一句话介绍
 
-**仓库精简版**：仅保留运行核心文件（4MB），原始参考资料（110MB）已移除。
+将倪海厦（1954-2012）的中医思维、人纪系列教学、临床心法、天纪命理蒸馏为可激活的 Agent Skill，使 AI 能以倪海厦的视角进行六经辨证、经方选药、解读症状。
+
+**直接激活词**：`倪海厦` / `海厦视角` / `倪师` / `经方思维` / `倪海厦会怎么看`
 
 ---
 
-## 安装指南
+## 快速安装
 
-### 方式一：ClawHub 一键安装（推荐）
+<details open>
+<summary><b> ClawHub（推荐）</b></summary>
 
 ```bash
-# 安装 ClawHub CLI
-npm install -g clawhub
-
-# 登录
-clawhub login
-
-# 安装倪海厦skill
+npm install -g clawhub && clawhub login
 clawhub install nihaixia
 ```
+</details>
 
-安装完成后，在 Claude Code 对话中直接说「倪海厦」即可激活。
-
-### 方式二：SkillHub 安装（腾讯云）
+<details>
+<summary><b>SkillHub（腾讯云）</b></summary>
 
 ```bash
-# 1. 安装 SkillHub CLI
 curl -fsSL https://skillhub.cn/install/install.sh | bash -s -- --no-skills
-
-# 2. 安装倪海厦skill
 skillhub install nihaixia-pro
 ```
+</details>
 
-### 方式三：OpenClaw 安装
+<details>
+<summary><b>OpenClaw / OpenClawMP / 手动安装</b></summary>
 
 ```bash
-# 安装 OpenClaw CLI
-npm install -g openclaw
-
-# 安装本技能
+# OpenClaw
 openclaw skills install nihaixia
-```
 
-### 方式四：OpenClawMP 安装
-
-```bash
-# 安装 OpenClawMP CLI
-npm install -g openclawmp
-
-# 搜索倪海厦skill
-openclawmp search 倪海厦
-
-# 安装（使用资产ID）
+# OpenClawMP
 openclawmp install skill/c03b361cb99d4b4ebc6cd17f361741ba
-```
 
-### 方式五：手机端快速使用（无需配置 OpenClaw）
-
-如果大家懒得配置 OpenClaw 或者希望在手机上面直接使用，请下载**腾讯 IMA APP**，导入本 SKILL 即可一键使用。
-
-**扫码下载 IMA APP，搜索「倪海厦」即可找到本技能：**
-
-### 知识码导入截图
-<img width="408" height="684" alt="【倪海厦skill】知识码" src="https://github.com/user-attachments/assets/3c8ba629-4a81-45b8-aca2-a82f7ac786e5" />
-
-### IMA APP 演示截图
-<img width="1458" height="1080" alt="IMA APP演示" src="https://github.com/user-attachments/assets/d70c6a0d-5b87-46b5-9833-fc2002980a02" />
-
-### 方式六：手动安装
-
-1. 克隆仓库：
-```bash
+# 手动
 git clone https://github.com/jangviktor-web/nihaixia.git
-```
-
-2. 将 `SKILL.md` 和 `modules/` 目录复制到你的 Agent 技能目录：
-```bash
-# Claude Code 用户
 cp -r nihaixia/ ~/.claude/skills/nihaixia/
-
-# OpenClaw 用户
-cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 ```
+</details>
 
-3. 重启 Agent 会话，在对话中使用触发词激活。
+<details>
+<summary><b>手机端（腾讯 IMA APP）</b></summary>
 
----
+下载腾讯 IMA APP，搜索「倪海厦」导入知识码，无需配置直接使用。
 
-## 相关项目
-
-### [汉唐中医 · 安卓诊断 APP](https://github.com/jangviktor-web/nihaixia-app)
-
-同一个知识库，独立的安卓应用。基于 Flutter 开发，离线可用，完全免费。
-
-| 功能 | 说明 |
-|---|---|
-| 六经辨证诊断 | 智能问诊引导，自动判断六经归属 |
-| 方剂速查 | 271首经方，支持搜索和筛选 |
-| 药物速查 | 345味本草，性味归经分类 |
-| 子午流注取穴 | 361穴，时间推算开穴 |
-| 经方剂量换算 | 古代度量衡 → 现代克数 |
-| 诊断历史趋势 | 六经传变可视化 |
-
-[下载 APK](https://github.com/jangviktor-web/nihaixia-app/releases/latest) · [查看项目](https://github.com/jangviktor-web/nihaixia-app)
+<img width="200" alt="知识码" src="https://github.com/user-attachments/assets/3c8ba629-4a81-45b8-aca2-a82f7ac786e5" />
+</details>
 
 ---
 
-## 项目声明
-本项目基于开源项目二次开发，遵循开源规范注明所有来源。
+## 功能矩阵
 
-## 来源说明
-- 基础框架：https://github.com/huoyalong/nihaisha-skill
-- 医案数据：https://github.com/9527qingfeng/hantang-nihaixia-follower
-- 汉唐文章集锦：倪海厦汉唐中医经典文章医案集（383 页 PDF）
-- 倪海厦文集：倪海厦文集及医案最新版（139 页 PDF）
-
-## 是什么
-将倪海厦（1954-2012）的中医思维、人纪系列教学内容、临床心法、天纪命理体系蒸馏为可激活的 Agent Skill，使 AI 能以倪海厦的视角分析中医问题、解读症状、给出辨证思路与经方建议，同时具备易经、紫微斗数、阳宅风水等命理学知识。
-
-**直接激活词**：倪海厦 / 海厦视角 / 倪师 / 经方思维 / 倪海厦会怎么看
+| 能力 | 覆盖范围 | 说明 |
+|:---|:---:|:---|
+| 六经辨证 | ✅ | 太阳/阳明/少阳/太阴/少阴/厥阴，传变规律+欲解时 |
+| 经方选药 | ✅ | 伤寒论129条+金匮23篇，含组成/剂量/煎服法/禁忌 |
+| 药物性味 | ✅ | 神农本草经345种，三品分类+五味归经+炮制要点 |
+| 临床医案 | ✅ | 849例倪师真实医案，按癌症/心血管/代谢病等6类分类 |
+| 针灸穴位 | ✅ | 十二经络+井荣俞经合+任督要穴+中风急救 |
+| 黄帝内经 | ✅ | 71篇完整蒸馏，中医基础理论核心 |
+| 天纪命理 | ✅ | 紫微斗数+易经六十四卦+阳宅风水 |
+| 梁冬对话 | ✅ | 2009年7期完整录音蒸馏，现代话题观点 |
+| 闭门课 | ✅ | 7大重病专题+7堂弟子课，血癌/乳癌/脑瘤等 |
+| 口述表达 | ✅ | 倪海厦口语风格模块，回复"像"倪师 |
 
 ---
 
 ## 使用示例
 
-```
-你从倪海厦的角度分析一下：病人肺癌晚期，咳嗽有血，应该怎么处理？
-```
+**感冒辨证**
+> **Q**：我感冒了，怕冷，没有汗，脖子后面疼
+> **A**：太阳伤寒，麻黄汤证。无汗恶寒、体痛——寒束于表。麻黄开毛孔，桂枝解肌，杏仁降气。
+
+**方剂查询**
+> **Q**：小柴胡汤什么时候用？
+> **A**：少阳病主方。口苦、咽干、目眩、往来寒热——但见一证便是。
+
+**药物性味**
+> **Q**：生附子和炮附子区别？
+> **A**：生附子——阴寒在里，四逆证。炮附子——表阳不固，汗出恶风。
+
+**医案参考**
+> **Q**：有没有肝癌的医案？
+> **A**：有，147个癌症医案。肝癌案例常用攻坚处方配合疏肝理气。
+
+---
+
+## 核心知识体系
+
+### 六经辨证速查
 
 ```
-倪师，小柴胡汤的使用要点是什么？什么情况下可以加减？
+太阳（表）→ 阳明（里热）→ 少阳（半表半里）
+         ↓ 失治误治
+太阴（脾寒）→ 少阴（心肾阳虚）→ 厥阴（阴阳逆乱 / 上热下寒）
 ```
 
-```
-生附子和炮附子有什么区别？分别在什么情况下用？
-```
+### 倪氏六健康标准
+
+1. 一觉到天亮，无失眠
+2. 胃口正常，三餐有饱饿感
+3. 每天晨起大便
+4. 一天小便 5-7 次，淡清黄色
+5. 头面冷、手足温热（四季皆然）
+6. 晨起阳反应
 
 ---
 
 ## 效果演示
 
-### 1. 六经辨证基础应用（感冒辨证）
-<img width="729" height="510" alt="六经辨证" src="https://github.com/user-attachments/assets/98af88a7-fbaa-4a50-ac63-7f10e8c61dbe" />
+<div align="center">
 
-### 2. 六经传变规律
-<img width="726" height="509" alt="六经传变" src="https://github.com/user-attachments/assets/af0fb0c1-944b-4846-8dc2-4aaa2bc5b531" />
+**六经辨证基础应用**
+<img width="729" alt="六经辨证" src="https://github.com/user-attachments/assets/98af88a7-fbaa-4a50-ac63-7f10e8c61dbe" />
 
-### 3. 日常养生与饮食禁忌（五味观）
-<img width="731" height="509" alt="饮食养生" src="https://github.com/user-attachments/assets/7c252c14-9497-4a94-be31-4a9670df3afb" />
+**六经传变规律**
+<img width="726" alt="六经传变" src="https://github.com/user-attachments/assets/af0fb0c1-944b-4846-8dc2-4aaa2bc5b531" />
+
+**日常养生与饮食禁忌**
+<img width="731" alt="饮食养生" src="https://github.com/user-attachments/assets/7c252c14-9497-4a94-be31-4a9670df3afb" />
+
+</div>
 
 ---
 
-## 核心特色
+## 相关项目
 
-### 六大经方心法
+<div align="center">
 
-| 心法 | 内容 |
-|---|---|
-| **六经辨证** | 太阳→阳明→少阳→太阴→少阴→厥阴，传变规律与欲解时 |
-| **阳气论** | 阳气不足先扶阳；阴病用阳药；生附子/生硫磺/炮附子精准区分 |
-| **经典至上** | 以《伤寒论》《金匮要略》原文为核心，经方不随意加减 |
-| **经方为主** | 温病派滋阴派不用；麻黄、附子、石膏等经方药重获正视 |
-| **诊断优先** | 十问为核心，眼诊/舌诊/脉诊/腹诊四诊合参 |
-| **治未病** | 节气养生、饮食五味、情志管理贯穿诊疗全程 |
+### [汉唐中医 · 安卓诊断 APP](https://github.com/jangviktor-web/nihaixia-app)
 
-### 十三大内容模块
+同一个知识库，独立的安卓应用。离线可用，完全免费。
 
-| 模块 | 内容规模 | 状态 |
-|---|---|---|
-| **伤寒论** | 条文 1-129 全覆盖，含倪海厦讲义补遗 12 条 | 129/129 |
-| **金匮要略** | 23 篇完整蒸馏，419 页讲义验证 | 23/23 |
-| **人纪·黄帝内经** | 71 篇完整蒸馏，基于 461 页讲义 PDF | 71 篇 |
-| **人纪·针灸教程** | 216 页讲义蒸馏，含十二经络/井荣俞经合/任督要穴 | 完整 |
-| **人纪·神农本草经** | 339 页视频同步文稿蒸馏，含三品分类/药性体系 | 完整 |
-| **人纪·医案集** | 849 个医案结构化，243 个超长医案已标记 | 849 例 |
-| **分类医案库** | 按疾病类型分类：癌症 147/心血管 22/代谢 12/自免 2/神经 3/其他 59 | 245 例 |
-| **口述表达DNA** | 倪海厦口语表达风格模块 | 完整 |
-| **天纪体系** | 天机道（紫微斗数）/人间道（易经）/地脉道（风水） | 完整 |
-| **人纪班闭门课** | 7 大重病专题 + 7 堂弟子课 | 完整 |
-| **梁冬对话精华** | 2009 年 12 月 7 期对话录音完整蒸馏 | 完整 |
-| **汉唐文章精华** | 10 篇专题文章（乳癌/便秘/心脏病/保养/药害等） | 完整 |
-| **汉唐诊疗日志** | 8 则精选医案 + 4 则经典案例 | 完整 |
+[![Download APK](https://img.shields.io/badge/下载-APK-green?style=for-the-badge&logo=android)](https://github.com/jangviktor-web/nihaixia-app/releases/latest)
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?style=for-the-badge)](https://github.com/jangviktor-web/nihaixia-app)
 
-### 数据来源清单
+| 六经辨证诊断 | 271首方剂速查 | 345味药物速查 | 子午流注取穴 |
+|:---:|:---:|:---:|:---:|
+| 智能问诊引导 | 搜索+六经筛选 | 性味归经分类 | 361穴时间推算 |
+
+</div>
+
+---
+
+## 数据来源
+
+<details>
+<summary><b>点击查看完整数据来源清单（10份讲义，2,452页）</b></summary>
 
 | 讲义 | 页数 | 提取字符 | 状态 |
 |---|---|---|---|
@@ -207,112 +187,51 @@ cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 | 倪海厦文集 | 139 页 | 234K | 8 则医案蒸馏 |
 | **合计** | **2,452 页** | **3.5M** | |
 
----
+</details>
 
-## 核心观点速览
-
-### 生附子 vs 炮附子 vs 生硫磺
-
-| 药物 | 对应证候 | 典型表现 |
-|---|---|---|
-| **生附子** | 阴寒（病在里、阳气极虚） | 四逆证：脚冷至膝 / 手冷至肘 |
-| **炮附子** | 表虚（表阳不固） | 汗出恶风、卫气不固 |
-| **生硫磺** | 水中火（命门火衰） | 水肿、关节肿痛、阴寒水肿 |
-
-### 六经传变规律
-
-```
-太阳（表）→ 阳明（里热）→ 少阳（半表半里）
-         ↓ 失治误治
-太阴（脾寒）→ 少阴（心肾阳虚）→ 厥阴（阴阳逆乱 / 上热下寒）
-```
-
-### 倪氏六健康标准
-
-1. 一觉到天亮，无失眠
-2. 胃口正常，三餐有饱饿感
-3. 每天晨起大便
-4. 一天小便 5-7 次，淡清黄色
-5. 头面冷、手足温热（四季皆然）
-6. 晨起阳反应（男勃起 / 女乳房敏感）
-
-### 天纪三才一体
-
-天命（紫微斗数）+ 人事（易经）+ 地理（阳宅风水）= 趋吉避凶
-
-> 「天、人、地各占三分之一，人事上绝佳的医学技术再加上地理优越的位置，占了三分之二，就大于天命了。这就是人与天争。」—— 倪海厦
-
-### 五味饮食观
-
-| 厚味 | 伤害 | 淡味 | 归属 |
-|---|---|---|---|
-| 咖啡（浓酸） | 伤脾→伤肾→骨伤 | 蔬菜淡苦 | 入心 |
-| 牛奶（酸性） | 伤脾/胰 | 天然蔗糖 | 缓急止痛 |
-| 重盐 | 伤骨/心 | 天然海盐 | 适量护正 |
-
----
-
-## 仓库结构
+<details>
+<summary><b>点击查看仓库目录结构</b></summary>
 
 ```
 nihaixia/
 ├── SKILL.md                    # 主技能文件（840K，Claude 直接读取）
-├── distilled_cases.md          # 849 医案结构化索引
-├── expression_style.md         # 倪海厦口语表达风格模块
-├── modules/                    # 9 个知识模块（详细内容）
+├── modules/                    # 9 个知识模块
 │   ├── 01_shanghan_sun.md      # 伤寒论太阳篇
 │   ├── 02_shanghan_other.md    # 伤寒论其他五经
-│   ├── 03_yian.md              # 医案集（849 例完整版）
+│   ├── 03_yian.md              # 医案集（849 例）
 │   ├── 04_jingui.md            # 金匮要略
 │   ├── 05_huangdi_neijing.md   # 黄帝内经
 │   ├── 06_liangdong.md         # 梁冬对话
 │   ├── 07_bimen_hantang.md     # 闭门课+汉唐
 │   ├── 08_huangdi_detail.md    # 黄帝内经详注
 │   └── 09_zhenjiu_bencao.md    # 针灸+神农本草经
-├── cases/                      # 分类医案（按疾病类型）
+├── cases/                      # 分类医案（245例）
 │   ├── 01_cancer.md            # 147 个癌症医案
 │   ├── 02_cardiovascular.md    # 22 个心血管医案
 │   ├── 03_metabolic.md         # 12 个代谢病医案
 │   ├── 04_autoimmune.md        # 2 个自身免疫医案
 │   ├── 05_neurological.md      # 3 个神经精神医案
 │   └── 06_other.md             # 59 个其他医案
-├── references/research/        # 研究资料
-│   ├── combined_reference.md   # 合并参考（生平/表达/教学/临床）
-│   ├── 01-writings.md          # 著作总览
-│   ├── 02-conversations.md     # 对话风格
-│   └── ...                     # 其他研究文件
-└── README.md
+└── references/research/        # 研究资料
 ```
-
-**SKILL.md 目录结构**：
-```
-一、角色设定 → 身份卡 / 角色扮演规则 / 回答工作流
-二、心智模型 → 六经辨证 / 太阳病篇条文1-129 / 其他五经
-三、决策启发式 / 表达DNA / 价值观 / 智识谱系
-四、伤寒论六经完整解读（条文1-129）
-五、金匮要略23篇完整解读
-六、人纪·医案集（849 例）+ 汉唐诊疗日志精选
-七、人纪班闭门课（7 大重病 + 7 堂弟子课）
-八、梁冬对话精华（2009年12月7期）
-九、人纪·黄帝内经（71篇完整）
-十、人纪·针灸教程 / 神农本草经
-十一、天纪体系（天机道/人间道/地脉道）
-十二、汉唐文章精华（10篇）
-十三、倪海厦推荐书目
-十四、口述表达DNA
-```
+</details>
 
 ---
 
 ## 更新日志
 
-- **v2.0.1** (2026-05-26)：新增分类医案库 cases/（245 例，按疾病类型分类）+ 研究资料 references/；修复 .gitignore 忽略 cases/ 的问题
-- **v2.0.0** (2026-05-25)：仓库精简——移除原始参考资料(110MB)、完整版SKILL.full.md、测试报告等非核心文件，仅保留运行必需文件(4MB)；新增仓库结构说明
-- **v1.1.2** (2026-05-24)：详情页重写——新增安装教程（ClawHub/OpenClaw/腾讯IMA/手动四种方式）、使用示例
-- **v1.1.1** (2026-05-24)：更名为「倪海厦skill」，slug 改为 `nihaixia`；发布至 ClawHub
-- **v1.1.0** (2026-05-23 StableV2026.5.23+Bencao)：神农本草经药性体系深度蒸馏；关键词索引全面优化；9 个知识模块检索路径全部校验
-- **v1.0.1** (2026-05-02)：结构优化；OCR 校正 13 处；新增汉唐文章精华 10 篇 + 诊疗日志 8 则
-- **v1.0.0** (2026-04-14)：初版发布——伤寒论 + 金匮要略 + 黄帝内经 + 医案集 + 闭门课全量蒸馏
+<details>
+<summary><b>点击展开完整更新日志</b></summary>
+
+- **v2.0.1** (2026-05-26)：新增分类医案库 cases/（245 例）+ 研究资料 references/；修复 .gitignore
+- **v2.0.0** (2026-05-25)：仓库精简——移除原始参考资料(110MB)，仅保留运行必需文件(4MB)
+- **v1.1.2** (2026-05-24)：详情页重写——新增安装教程、使用示例
+- **v1.1.1** (2026-05-24)：更名为「倪海厦skill」，slug 改为 `nihaixia`
+- **v1.1.0** (2026-05-23)：神农本草经药性体系深度蒸馏；关键词索引全面优化
+- **v1.0.1** (2026-05-02)：结构优化；OCR 校正 13 处；新增汉唐文章精华 10 篇
+- **v1.0.0** (2026-04-14)：初版发布
+
+</details>
 
 ---
 
@@ -323,10 +242,24 @@ nihaixia/
 
 ---
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=jangviktor-web/nihaixia&type=Date)](https://star-history.com/#jangviktor-web/nihaixia&Date)
+
+---
+
 ## 免责声明
 
 本项目内容仅供中医学习与研究，不替代专业医疗诊断。所有诊疗请务必咨询执业医师。
 
 ---
 
-Built with OpenClaw
+<div align="center">
+
+**基于 [nihaisha-skill](https://github.com/huoyalong/nihaisha-skill) 二次开发 · 遵循 MulanPSL-2.0 开源协议**
+
+[![ClawHub](https://img.shields.io/badge/ClawHub-v2.0.4-orange)](https://clawhub.ai/skills/nihaixia)
+[![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
+[![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.cloud.tencent.com/skills/nihaixia-pro)
+
+</div>
