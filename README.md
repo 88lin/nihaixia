@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="120" src="https://github.com/user-attachments/assets/d13b08a7-b877-491f-9cce-9aa415b04efb" alt="倪海厦skill Logo">
+<img width="120" src="logo.jpg" alt="倪海厦skill Logo">
 
 # 倪海厦skill · 经方中医AI
 
