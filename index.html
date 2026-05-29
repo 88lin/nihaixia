@@ -95,6 +95,7 @@ pre .url{color:#ce9178}
   section{padding:50px 16px}
   .feature-card{padding:24px}
   pre{font-size:.8rem;padding:14px}
+  .app-promo-grid{grid-template-columns:1fr !important}
 }
 
 /* Smooth scroll */
@@ -314,6 +315,48 @@ html{scroll-behavior:smooth}
   </div>
 </section>
 
+<!-- App Promo -->
+<section style="background:linear-gradient(135deg,#0d1117 0%,#161b22 50%,#1a1a2e 100%);color:#fff;padding:80px 20px">
+  <div class="container">
+    <div class="app-promo-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center">
+      <div>
+        <div style="display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:8px;padding:4px 12px;font-size:.8rem;margin-bottom:16px">Android APP · Flutter</div>
+        <h2 style="font-size:2rem;font-weight:800;margin-bottom:12px">汉唐中医 <span style="color:var(--gold-light)">安卓诊断 APP</span></h2>
+        <p style="opacity:.75;font-size:1.05rem;line-height:1.8;margin-bottom:24px">同一个知识库，独立的安卓应用。<br>离线可用 · 完全免费 · 开箱即用。</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px">
+          <div style="background:rgba(255,255,255,.06);border-radius:10px;padding:14px">
+            <div style="font-weight:700;margin-bottom:4px">六经辨证诊断</div>
+            <div style="font-size:.82rem;opacity:.6">智能问诊引导，自动辨证</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border-radius:10px;padding:14px">
+            <div style="font-weight:700;margin-bottom:4px">271首方剂速查</div>
+            <div style="font-size:.82rem;opacity:.6">搜索、六经筛选、分类</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border-radius:10px;padding:14px">
+            <div style="font-weight:700;margin-bottom:4px">345味药物速查</div>
+            <div style="font-size:.82rem;opacity:.6">性味归经、分类筛选</div>
+          </div>
+          <div style="background:rgba(255,255,255,.06);border-radius:10px;padding:14px">
+            <div style="font-weight:700;margin-bottom:4px">子午流注取穴</div>
+            <div style="font-size:.82rem;opacity:.6">361穴、时间推算开穴</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a href="https://github.com/jangviktor-web/nihaixia-app/releases/latest" style="display:inline-block;background:var(--red);color:#fff;padding:12px 28px;border-radius:10px;font-weight:700;font-size:.95rem;transition:background .2s" onmouseover="this.style.background='#a93226'" onmouseout="this.style.background='var(--red)'">下载 APK</a>
+          <a href="https://github.com/jangviktor-web/nihaixia-app" style="display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;padding:12px 28px;border-radius:10px;font-weight:700;font-size:.95rem;transition:background .2s" onmouseover="this.style.background='rgba(255,255,255,.15)'" onmouseout="this.style.background='rgba(255,255,255,.1)'">GitHub</a>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:40px 20px">
+          <div style="font-size:4rem;margin-bottom:16px">📱</div>
+          <div style="font-size:1.1rem;font-weight:700;margin-bottom:8px">AI Skill + Android APP</div>
+          <div style="font-size:.9rem;opacity:.6;line-height:1.7">桌面端用 Skill 激活 AI Agent<br>移动端用 APP 独立诊断<br>同一套知识体系，两种使用方式</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section style="text-align:center;padding:60px 20px">
   <div class="container">
@@ -329,6 +372,7 @@ html{scroll-behavior:smooth}
     <a href="https://github.com/jangviktor-web/nihaixia">GitHub</a>
     <a href="https://clawhub.ai/skills/nihaixia">ClawHub</a>
     <a href="https://skillhub.cloud.tencent.com/skills/nihaixia-pro">SkillHub</a>
+    <a href="https://github.com/jangviktor-web/nihaixia-app">Android APP</a>
     <a href="https://github.com/jangviktor-web/nihaixia/blob/main/LICENSE">MulanPSL-2.0</a>
   </div>
   <p>基于 <a href="https://github.com/huoyalong/nihaisha-skill">nihaisha-skill</a> 二次开发 · 遵循 MulanPSL-2.0 开源协议</p>

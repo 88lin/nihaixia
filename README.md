@@ -96,6 +96,25 @@ cp -r nihaixia/ ~/.openclaw/skills/nihaixia/
 
 ---
 
+## 相关项目
+
+### [汉唐中医 · 安卓诊断 APP](https://github.com/jangviktor-web/nihaixia-app)
+
+同一个知识库，独立的安卓应用。基于 Flutter 开发，离线可用，完全免费。
+
+| 功能 | 说明 |
+|---|---|
+| 六经辨证诊断 | 智能问诊引导，自动判断六经归属 |
+| 方剂速查 | 271首经方，支持搜索和筛选 |
+| 药物速查 | 345味本草，性味归经分类 |
+| 子午流注取穴 | 361穴，时间推算开穴 |
+| 经方剂量换算 | 古代度量衡 → 现代克数 |
+| 诊断历史趋势 | 六经传变可视化 |
+
+[下载 APK](https://github.com/jangviktor-web/nihaixia-app/releases/latest) · [查看项目](https://github.com/jangviktor-web/nihaixia-app)
+
+---
+
 ## 项目声明
 本项目基于开源项目二次开发，遵循开源规范注明所有来源。
 
