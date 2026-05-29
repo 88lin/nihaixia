@@ -8,12 +8,12 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#0a0a0a;--bg-card:#141414;--bg-elevated:#1a1a1a;
-  --red:#e23d28;--red-glow:rgba(226,61,40,.15);
-  --jade:#2d8a4e;--jade-glow:rgba(45,138,78,.12);
-  --amber:#d4a017;--amber-light:#f0d060;
-  --text:#e8e8e8;--text-dim:#888;--text-muted:#555;
-  --border:#222;--white:#fff;
+  --bg:#f7f5f0;--bg-card:#fff;--bg-elevated:#faf8f2;
+  --red:#c0392b;--red-glow:rgba(192,57,43,.08);
+  --jade:#2d8a4e;--jade-glow:rgba(45,138,78,.1);
+  --amber:#b8860b;--amber-light:#d4a017;
+  --text:#2c2c2c;--text-dim:#666;--text-muted:#999;
+  --border:#e5e0d8;--white:#fff;
 }
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--text);background:var(--bg);line-height:1.7;overflow-x:hidden}
@@ -21,17 +21,17 @@ a{color:var(--amber-light);text-decoration:none;transition:color .2s}
 a:hover{color:var(--white)}
 
 /* Nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,10,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1rem;color:var(--white)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;background:rgba(247,245,240,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1rem;color:var(--text)}
 .nav-logo img{width:28px;height:28px;border-radius:6px}
 .nav-links{display:flex;gap:24px;font-size:.85rem}
 .nav-links a{color:var(--text-dim)}
-.nav-links a:hover{color:var(--white)}
+.nav-links a:hover{color:var(--text)}
 
 /* Hero */
-.hero{padding:140px 20px 100px;text-align:center;position:relative}
+.hero{padding:140px 20px 100px;text-align:center;position:relative;background:linear-gradient(180deg,#f0ece2 0%,var(--bg) 100%)}
 .hero::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,var(--red-glow) 0%,transparent 70%);pointer-events:none}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--bg-card);border:1px solid var(--border);border-radius:24px;padding:6px 16px;font-size:.8rem;color:var(--text-dim);margin-bottom:32px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border);border-radius:24px;padding:6px 16px;font-size:.8rem;color:var(--text-dim);margin-bottom:32px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
 .hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--jade);animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 .hero h1{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:800;margin-bottom:20px;letter-spacing:-1px;line-height:1.2}
@@ -47,7 +47,7 @@ a:hover{color:var(--white)}
 /* Counters */
 .counters{display:flex;justify-content:center;gap:48px;margin-top:60px;flex-wrap:wrap}
 .counter{text-align:center}
-.counter .num{font-size:2.5rem;font-weight:800;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,var(--amber-light),var(--white));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block}
+.counter .num{font-size:2.5rem;font-weight:800;font-variant-numeric:tabular-nums;color:var(--red);display:block}
 .counter .label{font-size:.8rem;color:var(--text-muted);margin-top:4px}
 
 /* Section Number */
@@ -62,9 +62,9 @@ a:hover{color:var(--white)}
 .container{max-width:1100px;margin:0 auto}
 
 /* Terminal Demo */
-.terminal-section{background:var(--bg-card)}
-.terminal{background:#0d0d0d;border:1px solid var(--border);border-radius:12px;overflow:hidden;max-width:720px;margin:0 auto;font-family:"SF Mono","Fira Code","Consolas",monospace;font-size:.85rem}
-.terminal-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#111;border-bottom:1px solid var(--border)}
+.terminal-section{background:var(--bg-elevated)}
+.terminal{background:#1a1a2e;border:1px solid #2a2a3e;border-radius:12px;overflow:hidden;max-width:720px;margin:0 auto;font-family:"SF Mono","Fira Code","Consolas",monospace;font-size:.85rem;color:#e8e8e8}
+.terminal-bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#12121f;border-bottom:1px solid #2a2a3e}
 .terminal-dot{width:10px;height:10px;border-radius:50%}
 .terminal-dot.r{background:#ff5f57}.terminal-dot.y{background:#febc2e}.terminal-dot.g{background:#28c840}
 .terminal-title{margin-left:8px;font-size:.75rem;color:var(--text-muted)}
@@ -77,63 +77,64 @@ a:hover{color:var(--white)}
 
 /* How It Works */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;counter-reset:step}
-.step{position:relative;padding:32px;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;transition:border-color .3s}
+.step{position:relative;padding:32px;background:var(--white);border:1px solid var(--border);border-radius:16px;transition:border-color .3s;box-shadow:0 2px 12px rgba(0,0,0,.04)}
 .step:hover{border-color:var(--text-muted)}
 .step::before{counter-increment:step;content:"0" counter(step);font-size:3rem;font-weight:800;color:var(--border);position:absolute;top:20px;right:24px;font-family:"SF Mono",monospace}
-.step h3{font-size:1.1rem;font-weight:700;margin-bottom:8px;color:var(--white)}
+.step h3{font-size:1.1rem;font-weight:700;margin-bottom:8px;color:var(--text)}
 .step p{color:var(--text-dim);font-size:.9rem;line-height:1.7}
 .step .step-icon{font-size:1.6rem;margin-bottom:16px;display:block}
 
 /* Features Grid */
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.feat-card{padding:28px;background:var(--bg-card);border:1px solid var(--border);border-radius:14px;transition:all .3s}
+.feat-card{padding:28px;background:var(--white);border:1px solid var(--border);border-radius:14px;transition:all .3s;box-shadow:0 2px 12px rgba(0,0,0,.04)}
 .feat-card:hover{border-color:var(--text-muted);transform:translateY(-2px)}
 .feat-card .feat-icon{font-size:1.5rem;margin-bottom:12px;display:block}
-.feat-card h4{font-size:1rem;font-weight:700;color:var(--white);margin-bottom:6px}
+.feat-card h4{font-size:1rem;font-weight:700;color:var(--text);margin-bottom:6px}
 .feat-card p{color:var(--text-dim);font-size:.88rem;line-height:1.7}
 .feat-card .feat-tag{display:inline-block;margin-top:12px;padding:3px 10px;border-radius:6px;font-size:.75rem;font-weight:600;background:var(--jade-glow);color:var(--jade)}
 
 /* Quote */
 .quote-section{text-align:center;padding:100px 20px;position:relative}
 .quote-section::before{content:"\201C";font-size:8rem;color:var(--border);position:absolute;top:40px;left:50%;transform:translateX(-50%);font-family:Georgia,serif;line-height:1}
+.quote-section{background:var(--bg)}
 .quote-text{font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:500;max-width:640px;margin:0 auto 24px;line-height:1.8;color:var(--text);position:relative;z-index:1}
 .quote-author{color:var(--text-muted);font-size:.9rem}
 .quote-author strong{color:var(--text-dim)}
 
 /* Knowledge */
 .know-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.know-item{padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;text-align:center;transition:border-color .3s}
+.know-item{padding:20px;background:var(--white);border:1px solid var(--border);border-radius:12px;text-align:center;transition:border-color .3s;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .know-item:hover{border-color:var(--text-muted)}
-.know-item .k-num{font-size:1.6rem;font-weight:800;color:var(--amber-light);display:block;margin-bottom:4px}
-.know-item h4{font-size:.85rem;font-weight:600;color:var(--white);margin-bottom:2px}
+.know-item .k-num{font-size:1.6rem;font-weight:800;color:var(--red);display:block;margin-bottom:4px}
+.know-item h4{font-size:.85rem;font-weight:600;color:var(--text);margin-bottom:2px}
 .know-item p{font-size:.72rem;color:var(--text-muted)}
 
 /* Install */
-.install-section{background:var(--bg-card)}
+.install-section{background:var(--bg-elevated)}
 .install-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
-.install-card{padding:24px;background:var(--bg-elevated);border:1px solid var(--border);border-radius:14px;transition:border-color .3s}
+.install-card{padding:24px;background:var(--white);border:1px solid var(--border);border-radius:14px;transition:border-color .3s;box-shadow:0 2px 8px rgba(0,0,0,.03)}
 .install-card:hover{border-color:var(--text-muted)}
-.install-card h4{font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:12px}
+.install-card h4{font-size:.95rem;font-weight:700;color:var(--text);margin-bottom:12px}
 .install-card h4 .badge{display:inline-block;background:var(--red);color:#fff;font-size:.65rem;padding:2px 8px;border-radius:4px;margin-left:6px;vertical-align:middle}
-.install-card pre{background:#0d0d0d;border:1px solid var(--border);border-radius:8px;padding:14px;font-size:.8rem;overflow-x:auto;font-family:"SF Mono",monospace;color:var(--text-dim);line-height:1.7;margin:0}
+.install-card pre{background:#1a1a2e;border:1px solid #2a2a3e;border-radius:8px;padding:14px;font-size:.8rem;overflow-x:auto;font-family:"SF Mono",monospace;color:#c8c8d8;line-height:1.7;margin:0}
 
 /* App Promo */
-.app-section{background:linear-gradient(135deg,#0d1117,#161b22)}
+.app-section{background:linear-gradient(135deg,#f0ece2,#f7f5f0)}
 .app-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .app-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
-.app-feat{padding:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);border-radius:10px}
-.app-feat h5{font-size:.85rem;font-weight:600;color:var(--white);margin-bottom:2px}
+.app-feat{padding:14px;background:var(--white);border:1px solid var(--border);border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
+.app-feat h5{font-size:.85rem;font-weight:600;color:var(--text);margin-bottom:2px}
 .app-feat p{font-size:.75rem;color:var(--text-muted)}
-.app-mock{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:40px 20px;text-align:center}
+.app-mock{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:40px 20px;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.06)}
 .app-mock .phone-icon{font-size:4rem;margin-bottom:16px;display:block}
-.app-mock .mock-title{font-size:1.1rem;font-weight:700;color:var(--white);margin-bottom:8px}
+.app-mock .mock-title{font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:8px}
 .app-mock .mock-desc{font-size:.85rem;color:var(--text-dim);line-height:1.7}
 
 /* Footer */
-.footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center}
+.footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center;background:var(--bg)}
 .footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:16px;flex-wrap:wrap}
 .footer-links a{color:var(--text-dim);font-size:.85rem;transition:color .2s}
-.footer-links a:hover{color:var(--white)}
+.footer-links a:hover{color:var(--text)}
 .footer p{color:var(--text-muted);font-size:.8rem}
 .footer .disclaimer{margin-top:12px;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.6}
 
@@ -155,7 +156,7 @@ a:hover{color:var(--white)}
 <!-- Nav -->
 <nav class="nav">
   <div class="nav-logo">
-    <img src="https://github.com/user-attachments/assets/d13b08a7-b877-491f-9cce-9aa415b04efb" alt="Logo">
+    <img src="logo.jpg" alt="Logo">
     倪海厦skill
   </div>
   <div class="nav-links">
@@ -422,7 +423,7 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/</pre>
 <!-- Star History -->
 <section style="padding:40px 20px;text-align:center;background:var(--bg)">
   <a href="https://star-history.com/#jangviktor-web/nihaixia&Date">
-    <img src="https://api.star-history.com/svg?repos=jangviktor-web/nihaixia&type=Date&theme=dark" alt="Star History Chart" style="max-width:100%;height:auto;opacity:.8">
+    <img src="https://api.star-history.com/svg?repos=jangviktor-web/nihaixia&type=Date" alt="Star History Chart" style="max-width:100%;height:auto;opacity:.85">
   </a>
 </section>
 
