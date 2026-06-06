@@ -168,6 +168,21 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 
 </div>
 
+### [李可skill · 急危重症中医AI](https://github.com/jangviktor-web/likeskill)
+
+李可老中医（1930-2013）急危重症思维操作系统。395个医案、170+首方剂、92种症状路由、25种假证识别。
+
+与倪海厦skill互补：倪海厦覆盖全科教学（849医案），李可专注急危重症实战（附子最大750g）。
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?style=flat-square&logo=github)](https://github.com/jangviktor-web/likeskill)
+[![ClawHub](https://img.shields.io/badge/ClawHub-install%20like-green?style=flat-square)](https://clawhub.ai/skills/like)
+
+| 破格救心汤 | 假证识别25种 | 圆运动理论 | 经方剂量体系 |
+|:---:|:---:|:---:|:---:|
+| 附子30-750g | 假阳证24+假阴证1 | 彭子益完整蒸馏 | 汉代一两=15.625g |
+
+</div>
+
 ---
 
 ## 数据来源
