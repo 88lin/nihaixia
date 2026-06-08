@@ -9,7 +9,7 @@
 `129条伤寒论` · `23篇金匮` · `71篇黄帝内经` · `345种本草` · `849个医案` · `2,452页讲义` · `3.5M字精萃`
 
 [![GitHub Stars](https://img.shields.io/github/stars/jangviktor-web/nihaixia?style=for-the-badge&color=yellow&label=Stars)](https://github.com/jangviktor-web/nihaixia/stargazers)
-[![版本](https://img.shields.io/badge/版本-v2.0.1-blue?style=for-the-badge)](https://github.com/jangviktor-web/nihaixia/releases)
+[![版本](https://img.shields.io/badge/版本-v2.1.0-blue?style=for-the-badge)](https://github.com/jangviktor-web/nihaixia/releases)
 [![License](https://img.shields.io/badge/协议-MulanPSL--2.0-green?style=for-the-badge)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Ready-orange?style=for-the-badge&logo=anthropic&logoColor=white)]()
 [![平台](https://img.shields.io/badge/平台-5个-purple?style=for-the-badge)](#安装)
@@ -81,6 +81,7 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 | 能力 | 覆盖范围 | 说明 |
 |:---|:---:|:---|
 | 六经辨证 | ✅ | 太阳/阳明/少阳/太阴/少阴/厥阴，传变规律+欲解时 |
+| **六经辨证诊断公式** | ✅ | **8个诊断公式+快速诊断流程图+脉舌速查+七步走思维模式（v2.1.0新增）** |
 | 经方选药 | ✅ | 伤寒论129条+金匮23篇，含组成/剂量/煎服法/禁忌 |
 | 药物性味 | ✅ | 神农本草经345种，三品分类+五味归经+炮制要点 |
 | 临床医案 | ✅ | 849例倪师真实医案，按癌症/心血管/代谢病等6类分类 |
@@ -240,6 +241,41 @@ nihaixia/
 <details>
 <summary><b>点击展开完整更新日志</b></summary>
 
+#### v2.1.0 (2026-06-08) — 六经辨证诊断公式
+
+**核心升级**：从知识库查询工具升级为具备六经辨证思维模式的临床诊断助手。
+
+**新增内容**：
+- **8个诊断公式**：太阳/阳明/少阳/太阴/少阴/厥阴/少阴热化/合病并病，每个含IF-THEN辨证规则+分型鉴别表+代表方剂
+- **快速诊断流程图**：从患者症状到六经定位的完整决策树
+- **脉诊速查**：8种单脉+8种复合脉象
+- **舌诊速查**：5种舌象+6种复合舌象+脉舌矛盾决策树
+- **真寒假热/假寒鉴别**：八维法（面色/口鼻气/舌形/脉象/胸腹/小便/口渴/大便）+危重证候警示
+- **合病/并病速查**：11种组合+治疗先后原则
+- **七步走辨证思维模式**：定表里→分阴阳→辨寒热→判传变→审体质→选方剂→精细加减
+- **用药铁律**：7条禁忌+5条急救方案
+- **建中汤系列**：小建中/黄芪建中/当归建中/大建中（太阴病扩展）
+- **治肝三法**：乌梅丸/吴茱萸汤/小建中汤（金匮核心）
+- **八味肾气丸详解**：三补三泻+桂附八味丸vs六味地黄丸
+- **金匮杂病六经归属速查**：12种杂病+代表方剂
+- **金匮特有方剂六经归属**：咳喘类4方+补虚类8方+历节类3方（含完整组成）
+- **11处交叉引用**：诊断公式→modules/详细条文的双向链接
+
+**数据来源**：
+- 倪海厦《伤寒论讲义》（人纪系列）
+- 倪海厦《黄帝内经讲义》（人纪系列）
+- 倪海厦《金匮要略讲义》（人纪系列）
+
+**质量验证**：
+- 达尔文skill评分：9.4/10
+- 10个临床场景测试：10/10覆盖
+- 11个方剂剂量逐方核对：100%与源文件一致
+- 六经提纲条文核对：6条中5条完全一致，1条异体字差异
+
+**SKILL.md变化**：+476行（10,697→11,169行），新增第6097-6545行
+
+---
+
 - **v2.0.1** (2026-05-26)：新增分类医案库 cases/（245 例）+ 研究资料 references/；修复 .gitignore
 - **v2.0.0** (2026-05-25)：仓库精简——移除原始参考资料(110MB)，仅保留运行必需文件(4MB)
 - **v1.1.2** (2026-05-24)：详情页重写——新增安装教程、使用示例
@@ -275,7 +311,7 @@ nihaixia/
 
 **基于 [nihaisha-skill](https://github.com/huoyalong/nihaisha-skill) 二次开发 · 遵循 MulanPSL-2.0 开源协议**
 
-[![ClawHub](https://img.shields.io/badge/ClawHub-v2.0.4-orange)](https://clawhub.ai/skills/nihaixia)
+[![ClawHub](https://img.shields.io/badge/ClawHub-v2.1.0-orange)](https://clawhub.ai/skills/nihaixia)
 [![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
 [![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.cloud.tencent.com/skills/nihaixia-pro)
 
