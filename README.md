@@ -69,9 +69,10 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 <details>
 <summary><b>手机端（腾讯 IMA APP）</b></summary>
 
-下载腾讯 IMA APP，搜索「倪海厦」导入知识码，无需配置直接使用。
+下载腾讯 IMA APP，扫描下面知识码，无需配置直接使用。
 
 <img width="200"  alt="【倪海厦】知识码" src="https://github.com/user-attachments/assets/fb4fb05c-fc21-41fe-941e-c820ec16b750" />
+或者打开链接 ：【ima Skill】倪海厦 https://ima.qq.com/skill?shareId=70e35c8a24ed4c01a0986f9e3c83f3d1&from=share
 </details>
 
 
