@@ -71,8 +71,9 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 
 下载腾讯 IMA APP，搜索「倪海厦」导入知识码，无需配置直接使用。
 
-<img width="200" alt="知识码" src="https://github.com/user-attachments/assets/3c8ba629-4a81-45b8-aca2-a82f7ac786e5" />
+<img width="200"  alt="【倪海厦】知识码" src="https://github.com/user-attachments/assets/fb4fb05c-fc21-41fe-941e-c820ec16b750" />
 </details>
+
 
 ---
 
