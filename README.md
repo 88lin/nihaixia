@@ -73,7 +73,11 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 
 <img width="200"  alt="【倪海厦】知识码" src="https://github.com/user-attachments/assets/fb4fb05c-fc21-41fe-941e-c820ec16b750" />
 或者打开链接 ：【ima Skill】倪海厦 https://ima.qq.com/skill?shareId=70e35c8a24ed4c01a0986f9e3c83f3d1&from=share
-调用方法：<img width="6804" height="2160" alt="1000013868" src="https://github.com/user-attachments/assets/d392def5-b186-4de3-962c-e5ba37b54cde" />
+调用方法：
+<img width="3085"  alt="1000013924" src="https://github.com/user-attachments/assets/79ac68b1-cf18-47fe-ab32-1f876c5394f9" />
+<img width="3085"  alt="1000013923" src="https://github.com/user-attachments/assets/9746a3b0-fd37-49e2-8a3a-0d72a06a765a" />
+
+
 
 
 </details>
