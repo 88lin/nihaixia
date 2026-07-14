@@ -304,7 +304,15 @@ nihaixia/
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=jangviktor-web/nihaixia&type=Date)](https://star-history.com/#jangviktor-web/nihaixia&Date)
+## Star History
+
+<a href="https://www.star-history.com/?repos=jangviktor-web%2Fnihaixia&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=jangviktor-web/nihaixia&type=date&theme=dark&legend=top-left&sealed_token=90bVJFDbHHQSFP8nbDCMLOrarHWxE2ldwQS6xvX5oUxOWgtDrcDsCoRXns6f6WotXnjakzDRxLojNEqRg6J3jKHO2mphm4-71UmfHN9x-7hEjqVnBoXIlnF0pFIQcef0cf7IDyXHfphy0EEJ5Xd1LPPnkjc9IUc9E6oPSj1kc-EjvSRWU6fCmzvVIGop" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=jangviktor-web/nihaixia&type=date&legend=top-left&sealed_token=90bVJFDbHHQSFP8nbDCMLOrarHWxE2ldwQS6xvX5oUxOWgtDrcDsCoRXns6f6WotXnjakzDRxLojNEqRg6J3jKHO2mphm4-71UmfHN9x-7hEjqVnBoXIlnF0pFIQcef0cf7IDyXHfphy0EEJ5Xd1LPPnkjc9IUc9E6oPSj1kc-EjvSRWU6fCmzvVIGop" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=jangviktor-web/nihaixia&type=date&legend=top-left&sealed_token=90bVJFDbHHQSFP8nbDCMLOrarHWxE2ldwQS6xvX5oUxOWgtDrcDsCoRXns6f6WotXnjakzDRxLojNEqRg6J3jKHO2mphm4-71UmfHN9x-7hEjqVnBoXIlnF0pFIQcef0cf7IDyXHfphy0EEJ5Xd1LPPnkjc9IUc9E6oPSj1kc-EjvSRWU6fCmzvVIGop" />
+ </picture>
+</a>
 
 ---
 
