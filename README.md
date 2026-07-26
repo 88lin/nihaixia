@@ -191,6 +191,19 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 
 </div>
 
+### [胡希恕skill · 经方中医AI](https://github.com/jangviktor-web/huxushu)
+
+将胡希恕（1898-1984）的经方临床思维、六经八纲辨证体系、方证对应心法蒸馏为可激活的 Agent Skill，使 AI 能以胡希恕的视角进行六经辨证、方证鉴别、临床选方。
+
+胡希恕被誉为"经方传道第一人"，其"六经来自八纲"的创见是对《伤寒论》辨证体系最清晰的解读，直接影响了冯世纶等当代经方名家。
+
+与倪海厦skill互补：倪海厦覆盖全科教学（849医案），胡希恕是经方传道第一人，是对《伤寒论》辨证体系最清晰的解读。
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?style=flat-square&logo=github)](https://github.com/jangviktor-web/huxishu)
+[![ClawHub](https://img.shields.io/badge/ClawHub-install%20like-green?style=flat-square)](https://clawhub.ai/skills/huxishu)
+
+</div>
+
 ---
 
 ## 数据来源
