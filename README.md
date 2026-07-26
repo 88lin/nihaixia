@@ -36,8 +36,7 @@
 <summary><b> ClawHub（推荐）</b></summary>
 
 ```bash
-npm install -g clawhub && clawhub login
-clawhub install nihaixia
+openclaw skills install @jangviktor-web/nihaixia
 ```
 </details>
 
@@ -55,10 +54,8 @@ skillhub install nihaixia-pro
 
 ```bash
 # OpenClaw
-openclaw skills install nihaixia
+openclaw skills install @jangviktor-web/nihaixia
 
-# OpenClawMP
-openclawmp install skill/c03b361cb99d4b4ebc6cd17f361741ba
 
 # 手动
 git clone https://github.com/jangviktor-web/nihaixia.git
@@ -331,7 +328,7 @@ nihaixia/
 
 **基于 [nihaisha-skill](https://github.com/huoyalong/nihaisha-skill) 二次开发 · 遵循 MulanPSL-2.0 开源协议**
 
-[![ClawHub](https://img.shields.io/badge/ClawHub-v2.1.0-orange)](https://clawhub.ai/skills/nihaixia)
+[![ClawHub](https://img.shields.io/badge/ClawHub-v2.1.0-orange)](https://clawhub.ai/jangviktor-web/skills/nihaixia)
 [![OpenClawMP](https://img.shields.io/badge/OpenClawMP-v2.0.1-blueviolet)](https://openclawmp.cc)
 [![SkillHub](https://img.shields.io/badge/SkillHub-nihaixia--pro-red)](https://skillhub.cloud.tencent.com/skills/nihaixia-pro)
 
