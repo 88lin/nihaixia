@@ -191,7 +191,7 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 
 </div>
 
-### [胡希恕skill · 经方中医AI](https://github.com/jangviktor-web/huxushu)
+### [胡希恕skill · 经方中医AI](https://github.com/jangviktor-web/huxishu)
 
 将胡希恕（1898-1984）的经方临床思维、六经八纲辨证体系、方证对应心法蒸馏为可激活的 Agent Skill，使 AI 能以胡希恕的视角进行六经辨证、方证鉴别、临床选方。
 
