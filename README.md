@@ -183,7 +183,7 @@ cp -r nihaixia/ ~/.claude/skills/nihaixia/
 与倪海厦skill互补：倪海厦覆盖全科教学（849医案），李可专注急危重症实战（附子最大750g）。
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue?style=flat-square&logo=github)](https://github.com/jangviktor-web/likeskill)
-[![ClawHub](https://img.shields.io/badge/ClawHub-install%20like-green?style=flat-square)](https://clawhub.ai/skills/like)
+[![ClawHub](https://img.shields.io/badge/ClawHub-install%20like-green?style=flat-square)](https://clawhub.ai/jangviktor-web/skills/like)
 
 | 破格救心汤 | 假证识别25种 | 圆运动理论 | 经方剂量体系 |
 |:---:|:---:|:---:|:---:|
